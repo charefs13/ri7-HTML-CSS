@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Accueil - Développeur Web pour les Nuls</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="home" href="../index.html"><img src="../assets/images/home.png" alt="logo home"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <ul>
+
+                    <li>
+                        <a href="./html.html"> <img src="../assets/images/html.png" alt="logo HTML"></a>
+                    </li>
+                    <li>
+                        <a href="./css.html"> <img src="../assets/images/css.png" alt="logo CSS"></a>
+                    </li>
+                    <li>
+                        <a href="./js.html"> <img src="../assets/images/js.png" alt="logo Java Script"></a>
+                    </li>
+                    <li>
+                        <a href="./php.html"> <img class="php" src="../assets/images/php.png" alt="logo PHP"></a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"> <img src="../assets/images/contact.png"
+                                alt="logo téléphone"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="hide">
+
+                    <li>
+                        <a href="../pages/html.html"> HTML</a>
+                    </li>
+                    <li>
+                        <a href="../pages/css.html"> CSS</a>
+                    </li>
+                    <li>
+                        <a href="../pages/js.html"> Java Script</a>
+                    </li>
+                    <li>
+                        <a href="../pages/php.html"> PHP</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="background">
+        <h1 data-aos="fade-up">Le développement Web 💻 <br>pour les Nuls </h1>
+
+    </div>
+
+    <main>
+        <div data-aos="fade-up" class="contact">
+            <h2>Contact</h2>
+
+            <p data-aos="fade-up">Vous avez une question ou un commentaire n'hésitez pas à nous contacter.</p>
+
+            <form data-aos="fade-up" class="formulaire" action="">
+
+
+                <label for="nom">Nom</label>
+                <input id="nom" type="text" required>
+
+                <label for="prenom">Prénom</label>
+                <input id="prenom" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="mail@exemple.fr" required>
+
+                <label for="textarea">Exprimez Vous</label>
+                <textarea name="question" id="question" cols="60" rows="15"
+                    placeholder="Tapez votre texte ici" required></textarea>
+
+                <button onclick="alert('Votre message est envoyé !')">Envoyer</button>
+            </form>
+
+        </div>
+
+
+        <h3 data-aos="fade-up">Coordonnées</h3>
+        <div data-aos="fade-up" class="conteneurContact">
+
+            <article>
+                <div><img src="../assets/images/adresse.png" alt="logo adresse"></div>
+                <h4>ADRESSE</h4>
+                <p>Area 51 Nevada USA</p>
+            </article>
+
+            <article>
+                <div><img src="../assets/images/email.png" alt="logo-email"></div>
+                <h4>EMAIL</h4>
+                <p>ms@email.com</p>
+            </article>
+
+            <article>
+                <div><img src="../assets/images/telephone.png" alt="logo-telephone"></div>
+                <h4>TELEPHONE</h4>
+                <p>(+33) 01 23 45 67 89</p>
+            </article>
+        </div>
+
+
+    </main>
+
+    <button onclick="darkmode()" class="dark">Dark</button>
+
+
+    <footer>
+        <div class="copyright">Copyright© M.S 2024</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
