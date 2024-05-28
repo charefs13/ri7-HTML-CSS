@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <div>
+        <div class="rond">
             <a class="home" href="../index.html"><img src="../assets/images/home.png" alt="logo home"></a>
         </div>
         <nav>
@@ -42,8 +42,7 @@
                         <a href="./php.html"> <img class="php" src="../assets/images/php.png" alt="logo PHP"></a>
                     </li>
                     <li>
-                        <a href="./contact.html"> <img src="../assets/images/contact.png"
-                                alt="logo téléphone"></a>
+                        <a href="./contact.html"> <img src="../assets/images/contact.png" alt="logo téléphone"></a>
                     </li>
                 </ul>
             </div>
@@ -51,6 +50,9 @@
             <div>
                 <ul class="hide">
 
+                    <li>
+                        <a href="../index.html"> Accueil</a>
+                    </li>
                     <li>
                         <a href="../pages/html.html"> HTML</a>
                     </li>
@@ -95,10 +97,10 @@
                 <input id="email" type="email" placeholder="mail@exemple.fr" required>
 
                 <label for="textarea">Exprimez Vous</label>
-                <textarea name="question" id="question" cols="60" rows="15"
-                    placeholder="Tapez votre texte ici" required></textarea>
+                <textarea name="question" id="question" cols="60" rows="15" placeholder="Tapez votre texte ici"
+                    required></textarea>
 
-                <button onclick="alert('Votre message est envoyé !')">Envoyer</button>
+                <button class="send" onclick="alert('Votre message est envoyé ! Nous revenons vers vous sous 48H')">Envoyer</button>
             </form>
 
         </div>
@@ -129,7 +131,7 @@
 
     </main>
 
-    <button onclick="darkmode()" class="dark">Dark</button>
+    <button onclick="changeDark()" class="dark">Dark</button>
 
 
     <footer>

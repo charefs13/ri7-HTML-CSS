@@ -1,22 +1,21 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
+    
 }
 body {
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.rond {
+
+.rond, li{
     background-color: white;
-    border-radius: 100%;
+    border-radius: 15px;
     padding: 5px 5px;
 
 }
-
 .hide a {
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -25,7 +24,7 @@ body {
 .hide a:hover {
     background-color: rgba(0, 0, 0, 0.679);
     color: white;
-    
+
 }
 
 ul {
@@ -38,7 +37,7 @@ header {
     align-items: center;
     align-content: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding-left: 50px;
+
 }
 
 header img {
@@ -56,17 +55,18 @@ header img:hover {
 }
 
 .home:hover {
-    width: 120px;
+    width: 50px;
     transition: 0.4s ease;
 }
 
 
-.menu { display: flex;
+.menu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding-right: 1rem;
- 
+    padding: 10px 10px;
+
 }
 
 
@@ -74,11 +74,9 @@ header img:hover {
 .menu ul {
     display: flex;
     justify-content: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 50px;
     gap: 50px;
 }
+
 /*-------------------- Hide -----------------------------------------------------------------------*/
 
 .hide {
@@ -93,6 +91,7 @@ h1 {
     position: relative;
     padding-left: 100px;
     color: black;
+
 
 }
 
@@ -166,7 +165,7 @@ input {
     
 }
 
-button {
+.send {
     margin-top: 25px;
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -177,7 +176,7 @@ button {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-button:hover {
+.send:hover {
     transition: 0.2s ease;
     background-color: rgba(0, 0, 0, 0.724);
     color: white;
@@ -270,36 +269,68 @@ button:hover {
 @media (max-width: 500px) {
 
     .menu {
-            display:none
+        display: none
+    }
+    header {
+        width: 100vw;
+        padding: 0;
     
-        }
-    
+    }
+
     .hide {
         height: 100px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space;
         align-items: center;
-        gap: 30px;
-       font-weight: bold;
-       width: 100%;
-       
+        gap: 20px;
+        font-weight: bold;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        font-size: 15px;
+
     }
-    
+
     .home {
         display: none;
     }
-    
+
     .background {
         display: none;
     }
-    
+
     p {
+        text-align: center;
         font-size: 15px;
-        margin: 20px 0;
+        margin: 5px 0;
     }
 
     input {
-        width: 80%;
+        width: 70%;
         font-size: 20px;
     }
+
+textarea {
+    width: 80%;
+
+}
+
+h2, h3 {
+    font-size: 30px;
+}
+
+.conteneurContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.conteneurContact img {
+    width: 30px;
+
+}
+.conteneurContact article {
+    padding: 0;
 }
